@@ -1,0 +1,22 @@
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% del alto de la ventana */
+  }
+  
+  .centrar-contenido {
+    text-align: center;
+  }
+  
+  .imagen-centrada {
+    width: 200px; /* Ajusta el tamaño según tu necesidad */
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+  }
+  
+  .mensaje {
+    font-size: 24px;
+    margin-bottom: 30px; /* Espacio entre el texto y el botón */
+  }
+  

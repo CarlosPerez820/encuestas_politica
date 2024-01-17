@@ -1,0 +1,98 @@
+<!-- encuesta.component.html -->
+
+<div>
+    <mat-card class="instrucciones">
+    <h1>Encuesta informativa de campaña</h1>
+    
+    <p>Usuario:admin</p>
+    <p>ubicacion de encuesta: {{ubicacion}}</p>
+    </mat-card>
+</div>
+
+<div class="encuesta-container">
+
+    <!-- Pregunta 1: Input de texto -->
+    <div class="pregunta-card">
+        <mat-card class="card-quest">
+            <h3>1.- Ingrese el nombre del ciudadano a encuestar:</h3>
+            <mat-form-field>
+            <input matInput placeholder="Ingresa tu respuesta" [(ngModel)]="preguntas[0].respuesta" (change)="onRespuestaTexto(0)">
+            </mat-form-field>
+        </mat-card>
+    </div>
+
+    <div class="pregunta-card">
+        <!-- Pregunta 2: Radio buttons -->
+        <mat-card class="card-quest">
+            <h3>2.- Selecciona que piensas sobre las elecciones:</h3>
+            <mat-radio-group [(ngModel)]="preguntas[1].respuesta" (change)="onRespuestaOpciones(1)">
+                <ul class="opciones-list">
+                    <li class="opciones-list-item" *ngFor="let opcion of preguntas[1].opciones" [value]="opcion">
+                      <mat-radio-button [value]="opcion">{{ opcion }}</mat-radio-button>
+                    </li>
+                  </ul>
+            </mat-radio-group>
+        </mat-card>
+    </div>
+
+    <div class="pregunta-card">
+        <!-- Pregunta 3:  -->
+        <mat-card class="card-quest">
+            <h3>3.- Selecciona si conoces al candidato:</h3>
+            <mat-radio-group [(ngModel)]="preguntas[2].respuesta" (change)="onRespuestaOpciones(2)">
+                <ul class="opciones-list">
+                    <li class="opciones-list-item" *ngFor="let opcion of preguntas[2].opciones" [value]="opcion">
+                      <mat-radio-button [value]="opcion">{{ opcion }}</mat-radio-button>
+                    </li>
+                  </ul>
+            </mat-radio-group>
+        </mat-card>
+    </div>
+
+    <div class="pregunta-card">
+        <!-- Pregunta 4:  -->
+        <mat-card class="card-quest">
+            <h3>4.- Escribe la edad del encuestado:</h3>
+            <mat-form-field>
+                <input matInput type="number" [(ngModel)]="preguntas[3].respuesta" (change)="onRespuestaTexto(3)">
+            </mat-form-field>
+        </mat-card>
+    </div>
+
+    <div class="pregunta-card">
+        <!-- Pregunta 5: Textarea -->
+        <mat-card class="card-quest">
+            <h3>5.- Que crees que hace falta en Atlixco o en que se podria mejorar:</h3>
+            <mat-form-field>
+            <textarea matInput placeholder="Ingresa tus comentarios" [(ngModel)]="preguntas[4].respuesta" (change)="onRespuestaTexto(4)"></textarea>
+            </mat-form-field>
+        </mat-card>
+    </div>
+
+     <!-- <div class="pregunta-card">
+      
+        <mat-card class="card-quest">
+            <h3>Pregunta 6</h3>
+            <mat-form-field>
+            <mat-select placeholder="Selecciona" [(ngModel)]="preguntas[5].respuesta" (change)="onRespuestaListaDesplegable(5)">
+                <mat-option *ngFor="let opcion of preguntas[5].opciones" [value]="opcion">
+                {{ opcion }}
+                </mat-option>
+            </mat-select>
+            </mat-form-field>
+        </mat-card>
+    </div> 
+-->
+
+    <br>
+    <br>
+  
+  <div class="boton-enviar" *ngIf="preguntasContestadas === totalPreguntas">
+    <button class="custom-button" mat-raised-button color="primary" (click)="enviarEncuesta()">Enviar Encuesta</button>
+  </div>
+
+  <div class="indicador-progreso" *ngIf="preguntasContestadas < totalPreguntas">
+    <h2>Contestadas: {{ preguntasContestadas }} / {{ totalPreguntas }}</h2>
+  </div>
+  </div>
+  

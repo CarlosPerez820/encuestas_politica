@@ -1,0 +1,55 @@
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background: linear-gradient(45deg,#6fe2ff, #5460e7);
+}
+
+.wave-top {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 15S0px; /* Ajusta la altura de las olas según tus necesidades */
+  background-repeat: repeat-x;
+  background-size: contain;
+  z-index: 1; /* Ajusta el z-index según sea necesario */
+  background-image: url('src\assets\img\wave.svg'); /* Reemplaza 'wave-top.svg' con tu propia imagen de onda superior */
+}
+
+.wave-bottom {
+  bottom: 0;
+  background-image: url('src\assets\img\wave_bajo.svg'); /* Reemplaza 'wave-bottom.svg' con tu propia imagen de onda inferior */
+}
+
+.login{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.imagen{
+  margin-bottom: 30px;
+}
+
+.titulo{
+  margin-bottom: 35px;
+}
+
+.ancho{
+    width: 90%;
+}
+
+.spinner{
+    margin: 0 auto;
+}
+
+/* styles.css o styles.scss */
+.custom-button {
+  width: 90%;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 20px; /* Cambia el tamaño del texto */
+  padding: 10px 20px; /* Ajusta el padding para cambiar el tamaño del botón */
+  /* Agrega más estilos según sea necesario */
+}

@@ -1,0 +1,77 @@
+/* encuesta.component.css */
+
+.encuesta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-between;*/
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ffffff,#dfe9eb);
+  }
+  
+  .pregunta-card {
+    width: 100%;
+    margin-bottom: 20px;
+    /*background: linear-gradient(to right, #4f8fff, #e35d5b);  Fondo degradado */
+    border-radius: 10px;
+    box-shadow: 10px 10px 7px 0px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  
+  .instrucciones{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .opciones-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .opciones-list-item {
+    margin-bottom: 10px;
+  }
+  
+  .boton-enviar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+
+  .custom-button {
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px; /* Cambia el tamaño del texto */
+    padding: 10px 20px; /* Ajusta el padding para cambiar el tamaño del botón */
+    /* Agrega más estilos según sea necesario */
+  }
+  
+  .indicador-progreso {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #00bf6f ;
+    color: white;
+    text-align: center;
+  }
+
+  .card-quest{
+    /*background: linear-gradient(to right, #4f8fff, #e35d5b); /* Fondo degradado */
+    padding: 14px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .pregunta-card {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,31 @@
+<div class="wave-top"></div>
+<div class="wave-bottom"></div>
+<div class="body">
+
+<!-- Resto del contenido de tu aplicación -->
+
+    <div class="login">
+
+        <mat-spinner diameter="50" class="spinner" *ngIf="loading"></mat-spinner>
+
+        <form [formGroup]="form" (ngSubmit)="ingresar()" *ngIf="!loading">
+            <img src="assets\img\password.png" alt="" width="50%" class="imagen">
+            <h1 class="titulo">Inicio de sesión</h1>
+    
+            <mat-form-field class="ancho">
+                <mat-label>Usuario</mat-label>
+                <input matInput formControlName="usuario" autocomplete="off">
+            </mat-form-field>
+    
+            <mat-form-field class="ancho">
+                <mat-label>Contraseña</mat-label>
+                <input matInput type="password" formControlName="password">
+            </mat-form-field>
+            <br>
+            <button type="submit" class="custom-button" mat-raised-button color="primary" [disabled]="form.invalid">Ingresar</button>
+            <br>
+            <br>
+        </form>
+        
+    </div>
+</div>
