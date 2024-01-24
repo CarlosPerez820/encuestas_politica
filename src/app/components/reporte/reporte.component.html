@@ -1,2 +1,64 @@
 <app-navbar></app-navbar>
-<p>reporte works!</p>
+
+<div>
+    <mat-card class="instrucciones">
+    <p>A continuacion se muestra una representación grafica del resumen de las encuestas, la informacion mostrada se basa en un promedio hecho en base al total de 
+        encuestas realizadas
+    </p>
+    <h1>Total de encuestas: 120</h1>
+    </mat-card>
+</div>
+
+
+
+  
+  <div class="encuesta-container">
+
+    <div class="pregunta-card">
+        <mat-card class="card-quest">
+            <h3>1.-¿A escuchado hablar del General Arturo Solano ?</h3>
+            <div class="grafica">
+                <canvas id="doughnutChart" width="400" height="300"></canvas>
+              </div>
+        </mat-card>
+    </div>
+
+    <div class="pregunta-card">
+        <mat-card class="card-quest">
+            <h3>2.-¿Por qué medio se entero del General?'</h3>
+            <div class="grafica">
+                <canvas id="barChart" width="400" height="300"></canvas>
+            </div>
+        </mat-card>
+    </div>
+
+    <div class="pregunta-card">
+        <mat-card class="card-quest">
+            <h3>3.-¿Cúal seria su petición prioritaria</h3>
+            <div class="grafica">
+                <canvas id="barChart2" width="400" height="300"></canvas>
+              </div>
+        </mat-card>
+    </div>
+
+    <div class="pregunta-card">
+        <mat-card class="card-quest">
+            <h3>4.-¿Sabia usted que el General tiene una especialidad en seguridad Publica?</h3>
+            <  <div class="grafica">
+                <canvas id="doughnutChart2" width="400" height="300"></canvas>
+              </div>
+        </mat-card>
+    </div>
+
+    <div class="pregunta-card">
+        <mat-card class="card-quest">
+            <h3>5.-¿Sabias que el general es presidente de una asociación civil que ayuda a la población sin fines de lucro?</h3>
+            <div class="grafica">
+                <canvas id="doughnutChart3" width="400" height="300"></canvas>
+              </div>
+        </mat-card>
+    </div>
+
+    
+
+  </div>

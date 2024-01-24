@@ -16,6 +16,11 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSelectModule} from '@angular/material/select';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+
 
 @NgModule({
   declarations: [],
@@ -33,7 +38,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatRadioModule,
     MatCheckboxModule,
     MatSelectModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule,
+    MatListModule,
+    MatTableModule,
+    MatButtonToggleModule
   ],
   exports:[
     ReactiveFormsModule,
@@ -48,7 +57,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatRadioModule,
     MatCheckboxModule,
     MatSelectModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule,
+    MatListModule,
+    MatTableModule,
+    MatButtonToggleModule
   ]
 })
 export class SharedModule { }

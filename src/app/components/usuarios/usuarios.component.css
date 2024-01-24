@@ -1,0 +1,39 @@
+.instrucciones{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+  }
+  
+table {
+  width: 100%;
+}
+
+.pointer{
+cursor: pointer;
+}
+
+.mat-mdc-form-field {
+font-size: 14px;
+width: 100%;
+}
+
+.example-spacer {
+flex: 1 1 auto;
+}
+
+.ancho{
+width: 85%;
+}
+
+/* tu-componente.component.css */
+.mat-list-item {
+  margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
+.datos-container {
+  margin-top: 10px; /* Ajusta según sea necesario */
+}
+
+mat-icon-button {
+  margin-left: auto;
+}
