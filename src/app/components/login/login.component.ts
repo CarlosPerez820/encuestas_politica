@@ -35,9 +35,12 @@ export class LoginComponent {
 
     console.log(usuario + "-"+ pass);
 
-    if(usuario=="admin" && pass =="admin"){
+    if(usuario=="admin" && pass =="12345"){
       console.log("Ingreso exitoso");
-      this.animacionLogeo();
+      this.animacionLogeo('admin');
+    }
+    else if(usuario=="barredor1" && pass =="12345"){
+      this.animacionLogeo('corredor');
     }
     else{
       this.errorLogin();
@@ -53,12 +56,17 @@ export class LoginComponent {
     this.form.reset();
   }
 
-  animacionLogeo(){
+  animacionLogeo(tipo : string){
     this.loading = true;
     setTimeout(() => {
       
-      //Ruta de Dashboard
-      this.router.navigate(['formulario']);
+      if(tipo=='admin'){
+        this.router.navigate(['dashboard']);
+      }
+      else{
+        this.router.navigate(['formulario']);
+      }
+      
     }, (2000));
   }
 

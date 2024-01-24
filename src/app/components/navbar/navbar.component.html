@@ -1,0 +1,33 @@
+<mat-toolbar color="primary" class="navbar">
+    <button mat-icon-button class="hamburger" (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <span>Analisis de información</span>
+      
+      <span class="example-spacer"></span>
+    <!-- Opciones para escritorio -->
+    <div class="navbar-desktop">
+     
+      <a mat-button routerLink="/usuarios">Barredores</a>
+      <a mat-button routerLink="/reporte">Reporte de encuesta</a>
+      <a mat-button routerLink="/seguimiento">Seguimiento</a>
+      <a mat-button routerLink="/datos">Datos</a>
+     
+    </div>
+    <span class="example-spacer"></span>
+    <button mat-icon-button routerLink="/logout">
+        <mat-icon>logout</mat-icon>
+      </button>
+
+    <!-- Opciones para dispositivos móviles -->
+    <div class="navbar-mobile" [class.active]="isMenuOpen">
+      <div class="navbar-links">
+        <a mat-button routerLink="/usuarios" (click)="toggleMenu()">Barredores</a>
+        <a mat-button routerLink="/reporte" (click)="toggleMenu()">Reporte de encuesta</a>
+        <a mat-button routerLink="/seguimiento" (click)="toggleMenu()">Seguimiento</a>
+        <a mat-button routerLink="/datos" (click)="toggleMenu()">Datos</a>
+      </div>
+    </div>
+  </mat-toolbar>
+  

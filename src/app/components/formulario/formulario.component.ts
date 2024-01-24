@@ -28,12 +28,14 @@ export class FormularioComponent {
   }
 
   preguntas: Pregunta[] = [
-    { enunciado: 'Pregunta 1', tipo: 'texto' },
-    { enunciado: 'Pregunta 2', tipo: 'opciones', opciones: ['Me gusta', 'No me gusta', 'No me interesa'] },
-    { enunciado: 'Pregunta 3', tipo: 'opciones', opciones: ['Si', 'No'] },
-    { enunciado: 'Pregunta 4', tipo: 'numero' },
-    { enunciado: 'Pregunta 5', tipo: 'textarea' },
-   // { enunciado: 'Pregunta 6', tipo: 'lista', opciones: ['Opción 1', 'Opción 2', 'Opción 3'], respuesta: null, respondida: false }
+    { enunciado: '1.-¿A escuchado hablar del General Arturo Solano ?', tipo: 'opciones', opciones: ['Si', 'No'] },
+    { enunciado: '2.-¿Por qué medio se entero del General?', tipo: 'opciones', opciones: ['Redes sociales', 'Otra persona', 'Visita a domicilio', 'Publicidad u otros medios'] },
+    { enunciado: '3.-¿Cúal seria su petición prioritaria?', tipo: 'opciones', opciones: ['Educacion', 'Salud', 'Economia', 'Seguridad'] },
+    { enunciado: '4.-¿Sabia usted que el General tiene una especialidad en seguridad Publica?', tipo: 'opciones', opciones: ['Si', 'No'] },
+    { enunciado: '5.-¿Sabias que el general es presidente de una asociación civil que ayuda a la población sin fines de lucro?', tipo: 'opciones', opciones: ['Si', 'No'] },
+    { enunciado: '6.-¿En caso de tener una petición cual seria?', tipo: 'textarea' },
+    { enunciado: '¿Cual es su nombre completo?', tipo: 'texto' },
+    { enunciado: '¿Cual es su numero de telefono', tipo: 'numero' },
   ];
 
   totalPreguntas = this.preguntas.length;

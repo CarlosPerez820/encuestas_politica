@@ -15,6 +15,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSelectModule} from '@angular/material/select';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [],
@@ -31,7 +32,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatCardModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatSelectModule
+    MatSelectModule,
+    MatToolbarModule
   ],
   exports:[
     ReactiveFormsModule,
@@ -45,7 +47,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatCardModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatSelectModule
+    MatSelectModule,
+    MatToolbarModule
   ]
 })
 export class SharedModule { }

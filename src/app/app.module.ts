@@ -11,6 +11,12 @@ import { SharedModule } from './components/shared/shared.module';
 import { HttpClientModule } from '@angular/common/http'; 
 import { FormsModule } from '@angular/forms';
 import { FinalComponent } from './components/final/final.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { ReporteComponent } from './components/reporte/reporte.component';
+import { SeguimientoComponent } from './components/seguimiento/seguimiento.component';
+import { DatosComponent } from './components/datos/datos.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +24,12 @@ import { FinalComponent } from './components/final/final.component';
     LoginComponent,
     FormularioComponent,
     FinalComponent,
+    DashboardComponent,
+    NavbarComponent,
+    UsuariosComponent,
+    ReporteComponent,
+    SeguimientoComponent,
+    DatosComponent,
     
   ],
   imports: [
